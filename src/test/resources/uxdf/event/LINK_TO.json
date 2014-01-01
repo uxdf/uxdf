@@ -1,0 +1,40 @@
+{
+	"Line": {
+		"TowerTitle": {
+			"title": "链接到",
+			"isLeftMaster": false,
+			"isRightMaster": false,
+			"display": [
+				"__id"
+			],
+			"repositories": [
+				"metadata_origin",
+				"metadata_dict",
+				"data_standard",
+				"data_standard_publish",
+				"help",
+				"metadata_module"
+			],
+			"prop": {},
+			"required": "left"
+		},
+		"TowerRemark": {
+			"title": "链接到",
+			"isLeftMaster": false,
+			"isRightMaster": false,
+			"display": [
+				"__id"
+			],
+			"repositories": [
+				"metadata_origin",
+				"metadata_dict",
+				"data_standard",
+				"data_standard_publish",
+				"help",
+				"metadata_module"
+			],
+			"prop": {},
+			"required": "left"
+		}
+	}
+}

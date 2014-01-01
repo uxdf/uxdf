@@ -1,0 +1,20 @@
+{
+	"title": "版本库",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_gragit"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"title": "业务词汇",
+	"display": [
+		"title"
+	],
+	"namespace": [
+		"ns_signifier",
+		"ns_user"
+	],
+	"uniqueIndex": [
+		"notation"
+	],
+	"prop": {
+		"code": {
+			"base": "String",
+			"title": "业务编码",
+			"required": false,
+			"upperLimit": 100
+		},
+		"notation": {
+			"base": "String",
+			"title": "符号",
+			"required": true,
+			"upperLimit": 200
+		},
+		"title": {
+			"base": "String",
+			"title": "词汇",
+			"required": true,
+			"upperLimit": 255
+		},
+		"paraphrase": {
+			"base": "String",
+			"title": "业务含义",
+			"required": false,
+			"upperLimit": 1000
+		},
+		"isGeneral": {
+			"base": "Boolean",
+			"title": "是否是类",
+			"required": true,
+			"defaultValue": false,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"scope": {
+			"base": "String",
+			"title": "应用范围",
+			"required": false,
+			"defaultValue": "scope_user",
+			"readOnly": true,
+			"valueSource": [
+				{
+					"key": "scope_system",
+					"value": "系统范围"
+				},
+				{
+					"key": "scope_user",
+					"value": "用户范围"
+				}
+			]
+		}
+	}
+}

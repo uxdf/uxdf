@@ -1,0 +1,14 @@
+{
+	"DimensionSignifier": {
+		"DimensionSignifier": {
+			"title": "有关联",
+			"display": [
+				"__id"
+			],
+			"namespace": [
+				"signifier"
+			],
+			"prop": {}
+		}
+	}
+}

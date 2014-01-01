@@ -1,0 +1,56 @@
+{
+	"title": "属性定义",
+	"display": [
+		"title"
+	],
+	"namespace": [
+		"ns_system"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"buildProcess": "属性定义微流程",
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true
+		},
+		"title": {
+			"title": "标题",
+			"base": "String",
+			"required": true
+		},
+		"base": {
+			"title": "数据类型",
+			"base": "String",
+			"required": true
+		},
+		"defaultValue": {
+			"title": "默认值",
+			"base": "String",
+			"required": false
+		},
+		"required": {
+			"title": "必填",
+			"base": "Boolean",
+			"required": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"configDesc": {
+			"title": "配置描述",
+			"base": "String",
+			"upperLimit": 5000,
+			"required": true
+		}
+	}
+}

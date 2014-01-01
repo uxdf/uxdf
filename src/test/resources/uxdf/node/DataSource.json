@@ -1,0 +1,219 @@
+{
+	"title": "关系数据库数据源",
+	"display": [
+		"databaseName"
+	],
+	"namespace": [
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict"
+	],
+	"uniqueIndex": [
+		"databaseName",
+		"DataSource-BELONG_TO>BusinessSystem"
+	],
+	"prop": {
+		"databaseName": {
+			"title": "数据源名",
+			"base": "String",
+			"required": true,
+			"upperLimit": 48,
+			"lowerLimit": 1,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z0-9\\u4e00-\\u9fa5]*$",
+						"message": "仅能输入中文字符、英文字符、数字"
+					}
+				]
+			]
+		},
+		"databaseType": {
+			"title": "数据库类型",
+			"base": "String",
+			"required": true,
+			"valueSource": [
+				{
+					"key": "mysql",
+					"value": "Mysql"
+				},
+				{
+					"key": "oracle",
+					"value": "Oracle"
+				},
+				{
+					"key": "netezza",
+					"value": "Netezza"
+				},
+				{
+					"key": "hive",
+					"value": "Hive"
+				},
+				{
+					"key": "hadoop",
+					"value": "Hadoop"
+				}
+			]
+		},
+		"databaseConnection": {
+			"title": "数据库连接方式",
+			"base": "String",
+			"required": true,
+			"valueSource": [
+				{
+					"key": "jndi",
+					"value": "JNDI"
+				},
+				{
+					"key": "jdbc",
+					"value": "JDBC"
+				}
+			]
+		},
+		"ip": {
+			"title": "主机名",
+			"base": "String",
+			"required": false
+		},
+		"port": {
+			"title": "端口号",
+			"base": "String",
+			"required": false
+		},
+		"instanceName": {
+			"title": "实例名或数据库名",
+			"base": "String",
+			"required": false
+		},
+		"account": {
+			"title": "账号",
+			"base": "String",
+			"required": false
+		},
+		"password": {
+			"title": "密码",
+			"base": "String",
+			"required": false
+		},
+		"jndiName": {
+			"title": "JNDI名称",
+			"base": "String",
+			"required": false,
+			"upperLimit": 255,
+			"lowerLimit": 1
+		},
+		"remarks": {
+			"title": "备注",
+			"base": "String",
+			"required": false,
+			"upperLimit": 255,
+			"lowerLimit": 1
+		},
+		"amount": {
+			"title": "采集数量",
+			"base": "Integer",
+			"required": false
+		},
+		"collectTable": {
+			"title": "是否采集元数据表",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"collectView": {
+			"title": "是否采集元数据视图",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"collectTrigger": {
+			"title": "是否采集触发器",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"collectProcedure": {
+			"title": "是否采集存储过程",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"collectFunction": {
+			"title": "是否采集函数",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"collectIndexTable": {
+			"title": "是否采集索引表",
+			"base": "Boolean",
+			"required": false,
+			"defaultValue": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		}
+	}
+}

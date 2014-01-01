@@ -1,0 +1,58 @@
+{
+	"title": "对象",
+	"display": [
+		"type", "uuid"
+	],
+	"namespace": [
+		"ns_gragit"
+	],
+	"uniqueIndex": [
+		"type",
+		"id",
+		"uuid",
+		"hash"
+	],
+	"prop": {
+		"type": {
+			"title": "类型",
+			"base": "String",
+			"required": true,
+			"readyOnly": true,
+			"valueSource": [
+				{
+					"key": "Node",
+					"value": "Node"
+				},
+				{
+					"key": "Event",
+					"value": "Event"
+				}
+			]
+		},
+		"id": {
+			"title": "逻辑标识",
+			"base": "Integer",
+			"required": true,
+			"readyOnly": true
+		},
+		"uuid": {
+			"title": "业务标识",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		},
+		"hash": {
+			"title": "内容签名",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		},
+		"content": {
+			"title": "内容",
+			"base": "String",
+			"upperLimit": 1000000,
+			"required": true,
+			"readyOnly": true
+		}
+	}
+}

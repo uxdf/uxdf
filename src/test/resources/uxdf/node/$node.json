@@ -1,0 +1,27 @@
+{
+	"title": "Node定义",
+	"display": [
+		"title"
+	],
+	"namespace": [
+		"$"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"repositories": [],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 60
+		},
+		"title": {
+			"title": "标题",
+			"base": "String",
+			"required": true,
+			"upperLimit": 200
+		}
+	}
+}

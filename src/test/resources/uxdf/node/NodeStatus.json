@@ -1,0 +1,52 @@
+{
+	"title": "节点状态",
+	"display": [
+		"hostname"
+	],
+	"uniqueIndex": [
+		"hostname"
+	],
+	"namespace": [
+		"ns_system"
+	],
+	"repositories": [
+	],
+	"prop": {
+		"hostname": {
+			"title": "节点名称",
+			"base": "String",
+			"required": true,
+			"readOnly": true
+		},
+		"status": {
+			"title": "状态",
+			"base": "String",
+			"required": true,
+			"valueSource": [
+				{
+					"key": "offline",
+					"value": "离线"
+				},
+				{
+					"key": "online",
+					"value": "在线"
+				}
+			]
+		},
+		"taskRunningNum": {
+			"title": "运行中任务数",
+			"base": "Integer",
+			"required": true
+		},
+		"memoryFree": {
+			"title": "空闲内存",
+			"base": "Integer",
+			"required": false
+		},
+		"cpuFree": {
+			"title": "空闲CPU",
+			"base": "Integer",
+			"required": false
+		}
+	}
+}

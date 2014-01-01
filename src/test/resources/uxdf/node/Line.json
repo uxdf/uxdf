@@ -1,0 +1,46 @@
+{
+	"title": "行占位",
+	"display": [
+		"display"
+	],
+	"namespace": [
+		"ns_system",
+		"ns_metadata"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict",
+		"data_standard",
+		"data_standard_publish",
+		"data_xuqiu",
+		"help",
+		"metadata_module"
+	],
+	"prop": {
+		"display": {
+			"title": "展示内容",
+			"base": "String",
+			"required": true,
+			"upperLimit": 255,
+			"lowerLimit": 1
+		},
+		"mappingSd": {
+			"title": "映射Sd类型",
+			"base": "String",
+			"required": true
+		},
+		"indent": {
+			"title": "缩进",
+			"base": "Integer",
+			"required": true,
+			"upperLimit": 10,
+			"lowerLimit": 0
+		},
+		"lineIndex": {
+			"title": "行顺序",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30
+		}
+	}
+}

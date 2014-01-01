@@ -1,0 +1,29 @@
+{
+	"title": "备注",
+	"display": [
+		"content"
+	],
+	"namespace": [
+		"ns_system",
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict",
+		"data_standard",
+		"data_standard_publish",
+		"data_xuqiu",
+		"help",
+		"metadata_module"
+	],
+	"prop": {
+		"content": {
+			"title": "内容",
+			"base": "String",
+			"required": true,
+			"upperLimit": 500,
+			"lowerLimit": 1
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"title": "用户组",
+	"extend": [],
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_system",
+		"ns_user"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30,
+			"lowerLimit": 1,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z0-9\\u4e00-\\u9fa5]*$",
+						"message": "仅能输入中文字符、英文字符、数字"
+					}
+				]
+			]
+		}
+	}
+}

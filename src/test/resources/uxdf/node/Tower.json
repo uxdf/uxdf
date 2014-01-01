@@ -1,0 +1,77 @@
+{
+	"title": "Tower",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_system",
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict",
+		"data_standard",
+		"data_standard_publish",
+		"data_xuqiu",
+		"help",
+		"metadata_module"
+	],
+	"uniqueIndex": [
+		"code"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30,
+			"lowerLimit": 1,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z_0-9\\u4e00-\\u9fa5]*$",
+						"message": "仅能输入中文字符、英文字母、数字和下划线"
+					}
+				]
+			]
+		},
+		"code": {
+			"title": "编码",
+			"base": "String",
+			"required": true,
+			"upperLimit": 20,
+			"lowerLimit": 4,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z_0-9]*$",
+						"message": "仅能输入英文字母、数字和下划线"
+					}
+				]
+			]
+		},
+		"icon": {
+			"title": "图标",
+			"base": "String",
+			"required": true,
+			"upperLimit": 200
+		},
+		"banners": {
+			"title": "横幅",
+			"base": "String",
+			"required": false,
+			"upperLimit": 200
+		},
+		"config": {
+			"title": "配置",
+			"base": "String",
+			"required": false,
+			"upperLimit": 2000
+		}
+	}
+}

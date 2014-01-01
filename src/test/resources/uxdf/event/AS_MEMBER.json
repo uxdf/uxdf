@@ -1,0 +1,14 @@
+{
+	"Signifier": {
+		"Signifier": {
+			"title": "类成员",
+			"display": [
+				"__id"
+			],
+			"namespace": [
+				"signifier"
+			],
+			"prop": {}
+		}
+	}
+}

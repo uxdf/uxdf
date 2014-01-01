@@ -1,0 +1,50 @@
+{
+	"title": "菜单项",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_user"
+	],
+	"repositories": [],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 20
+		},
+		"icon": {
+			"title": "图标",
+			"base": "Binary",
+			"contentType": "image/*",
+			"required": false
+		},
+		"config": {
+			"title": "配置",
+			"base": "String",
+			"required": true,
+			"upperLimit": 500
+		},
+		"isRoot": {
+			"title": "是否是根",
+			"base": "Boolean",
+			"required": true,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"sortIndex": {
+			"title": "排序号",
+			"base": "Integer",
+			"required": false
+		}
+	}
+}

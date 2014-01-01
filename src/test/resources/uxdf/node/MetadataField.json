@@ -1,0 +1,245 @@
+{
+	"title": "元数据字段",
+	"display": [
+		"fieldName"
+	],
+	"uniqueIndex": [
+		"metadataTableId",
+		"fieldName",
+        "MetadataField-BELONG_TO>MetadataTable-BELONG_TO>Schema-BELONG_TO>DataSource-BELONG_TO>BusinessSystem"
+	],
+	"namespace": [
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict"
+	],
+	"prop": {
+		"fieldId": {
+			"title": "字段编号",
+			"base": "Integer",
+			"required": false,
+			"lowerLimit": 0
+		},
+		"fieldName": {
+			"title": "字段名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 128,
+			"lowerLimit": 1
+		},
+		"fieldType": {
+			"title": "字段类型",
+			"base": "String",
+			"required": true,
+			"valueSource": [
+				{
+					"key": "bfile",
+					"value": "bfile"
+				},
+				{
+					"key": "binaryDouble",
+					"value": "binary_double"
+				},
+				{
+					"key": "binaryFloat",
+					"value": "binary_float"
+				},
+				{
+					"key": "blob",
+					"value": "blob"
+				},
+				{
+					"key": "char",
+					"value": "char"
+				},
+				{
+					"key": "clob",
+					"value": "clob"
+				},
+				{
+					"key": "date",
+					"value": "date"
+				},
+				{
+					"key": "double",
+					"value": "double"
+				},
+				{
+					"key": "float",
+					"value": "float"
+				},
+				{
+					"key": "intervalDay",
+					"value": "interval_day"
+				},
+				{
+					"key": "intervalYear",
+					"value": "interval_year"
+				},
+				{
+					"key": "long",
+					"value": "long"
+				},
+				{
+					"key": "longRaw",
+					"value": "long_raw"
+				},
+				{
+					"key": "nchar",
+					"value": "nchar"
+				},
+				{
+					"key": "nclob",
+					"value": "nclob"
+				},
+				{
+					"key": "number",
+					"value": "number"
+				},
+				{
+					"key": "nvarchar",
+					"value": "nvarchar"
+				},
+				{
+					"key": "nvarchar2",
+					"value": "nvarchar2"
+				},
+				{
+					"key": "raw",
+					"value": "raw"
+				},
+				{
+					"key": "rawid",
+					"value": "rawid"
+				},
+				{
+					"key": "timestamp",
+					"value": "timestamp"
+				},
+				{
+					"key": "urowid",
+					"value": "urowid"
+				},
+				{
+					"key": "vchar",
+					"value": "vchar"
+				},
+				{
+					"key": "vchar2",
+					"value": "vchar2"
+				}
+			]
+		},
+		"fieldLength": {
+			"title": "字段长度",
+			"base": "Integer",
+			"required": false,
+			"upperLimit": 9999,
+			"lowerLimit": 1
+		},
+		"precisionVal": {
+			"title": "字段精度",
+			"base": "Integer",
+			"required": false,
+			"upperLimit": 9999,
+			"lowerLimit": 0
+		},
+		"isnullable": {
+			"title": "是否为空",
+			"base": "Boolean",
+			"required": true,
+			"defaultValue": false,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"remarks": {
+			"title": "注释",
+			"base": "String",
+			"required": false,
+			"upperLimit": 40000,
+			"lowerLimit": 0
+		},
+		"primaryKey": {
+			"title": "主键",
+			"base": "Boolean",
+			"required": true,
+			"defaultValue": false,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"foreignKey": {
+			"title": "外键",
+			"base": "Boolean",
+			"required": true,
+			"defaultValue": false,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"indexKey": {
+			"title": "索引",
+			"base": "Boolean",
+			"required": true,
+			"defaultValue": false,
+			"valueSource": [
+				{
+					"key": true,
+					"value": "是"
+				},
+				{
+					"key": false,
+					"value": "否"
+				}
+			]
+		},
+		"fieldCoding": {
+			"title": "字段编码",
+			"base": "String",
+			"required": false,
+			"lowerLimit": 1
+		},
+		"partitionKey": {
+			"title": "分区键",
+			"base": "Integer",
+			"required": false,
+			"upperLimit": 10,
+			"lowerLimit": 1
+		},
+		"metadataTableId": {
+			"title": "表ID",
+			"base": "Integer",
+			"required": true,
+			"readOnly": true,
+			"defaultValue": {
+				"chain": "MetadataField-BELONG_TO>MetadataTable",
+				"property": "__id"
+			}
+		}
+	}
+}

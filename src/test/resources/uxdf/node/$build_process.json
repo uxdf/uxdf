@@ -1,0 +1,21 @@
+{
+	"title": "构建流程",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"$"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"repositories": [],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 60
+		}
+	}
+}

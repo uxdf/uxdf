@@ -1,0 +1,29 @@
+{
+	"title": "部门",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_standard",
+		"ns_user"
+	],
+	"uniqueIndex": [
+		"code"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": false,
+			"upperLimit": 30,
+			"lowerLimit": 1
+		},
+		"code": {
+			"title": "部门编码",
+			"base": "String",
+			"required": false,
+			"upperLimit": 30,
+			"lowerLimit": 1
+		}
+	}
+}

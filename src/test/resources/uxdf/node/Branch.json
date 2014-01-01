@@ -1,0 +1,39 @@
+{
+	"title": "版本库",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_gragit"
+	],
+	"uniqueIndex": [
+		"repository",
+		"name"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		},
+		"repository": {
+			"title": "版本库",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		},
+		"lockUser": {
+			"title": "锁定用户",
+			"base": "String",
+			"required": false,
+			"readyOnly": true
+		},
+		"head": {
+			"title": "当前版本",
+			"base": "String",
+			"required": false,
+			"readyOnly": true
+		}
+	}
+}

@@ -1,0 +1,176 @@
+{
+	"title": "元数据表",
+	"display": [
+		"tableName"
+	],
+	"uniqueIndex": [
+		"schemaId",
+		"tableName",
+		"MetadataTable-BELONG_TO>Schema-BELONG_TO>DataSource-BELONG_TO>BusinessSystem"
+	],
+	"namespace": [
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict"
+	],
+	"prop": {
+		"schemaId": {
+			"title": "库ID",
+			"base": "Integer",
+			"required": true,
+			"readOnly": true,
+			"defaultValue": {
+				"chain": "MetadataTable-BELONG_TO>Schema",
+				"property": "__id"
+			}
+		},
+		"tableName": {
+			"title": "表名",
+			"base": "String",
+			"required": true,
+			"upperLimit": 128,
+			"lowerLimit": 1
+		},
+		"description": {
+			"title": "描述",
+			"base": "String",
+			"required": false,
+			"upperLimit": 40000,
+			"lowerLimit": 1
+		},
+		"theme": {
+			"title": "主题",
+			"base": "String",
+			"required": false,
+			"valueSource": [
+				{
+					"key": "PUB",
+					"value": "公共区"
+				},
+				{
+					"key": "PUB_DIM",
+					"value": "维表"
+				},
+				{
+					"key": "PUB_MAP",
+					"value": "映射"
+				},
+				{
+					"key": "PUB_CDE",
+					"value": "源系统编码"
+				},
+				{
+					"key": "PUB_STD",
+					"value": "标准编码"
+				},
+				{
+					"key": "PUB_KPI",
+					"value": "指标"
+				},
+				{
+					"key": "DWA",
+					"value": "汇总层"
+				},
+				{
+					"key": "DWA_USR",
+					"value": "个人用户"
+				},
+				{
+					"key": "DWA_GRP",
+					"value": "集团用户"
+				},
+				{
+					"key": "DWA_BEH",
+					"value": "用户行为"
+				},
+				{
+					"key": "DWA_DAT",
+					"value": "数据业务"
+				},
+				{
+					"key": "DWA_EVT",
+					"value": "事件"
+				},
+				{
+					"key": "DWA_CHL",
+					"value": "渠道"
+				},
+				{
+					"key": "DWA_RES",
+					"value": "资源"
+				},
+				{
+					"key": "DWA_MKT",
+					"value": "营销活动"
+				},
+				{
+					"key": "DWA_TMT",
+					"value": "专题"
+				},
+				{
+					"key": "DWA_SDH",
+					"value": "属地化"
+				},
+				{
+					"key": "ST",
+					"value": "应用层"
+				},
+				{
+					"key": "ST_FIN",
+					"value": "财务"
+				},
+				{
+					"key": "ST_MMS",
+					"value": "彩信日报"
+				},
+				{
+					"key": "ST_CARE",
+					"value": "客服"
+				},
+				{
+					"key": "ST_CITY",
+					"value": "区县支撑"
+				},
+				{
+					"key": "ST_CHL",
+					"value": "渠道"
+				},
+				{
+					"key": "ST_DK",
+					"value": "数据集市"
+				},
+				{
+					"key": "ST_MKT",
+					"value": "营销"
+				},
+				{
+					"key": "ST_KPI",
+					"value": "指标工具"
+				},
+				{
+					"key": "ST_TMT",
+					"value": "终端"
+				},
+				{
+					"key": "ST_BRAND",
+					"value": "品牌"
+				},
+				{
+					"key": "ST_CUST",
+					"value": "客户管理"
+				},
+				{
+					"key": "ST_ALERT",
+					"value": "风险管理"
+				},
+				{
+					"key": "ST_PRD",
+					"value": "产品分析"
+				}
+			]
+		}
+	}
+}

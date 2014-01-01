@@ -1,0 +1,38 @@
+{
+	"title": "库",
+	"extend": [],
+	"display": [
+		"name"
+	],
+	"uniqueIndex": [
+		"dataSourceId",
+		"name",
+		"Schema-BELONG_TO>DataSource-BELONG_TO>BusinessSystem"
+	],
+	"namespace": [
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict"
+	],
+	"prop": {
+		"dataSourceId": {
+			"title": "数据源ID",
+			"base": "Integer",
+			"required": true,
+			"readOnly": true,
+			"defaultValue": {
+				"chain": "Schema-BELONG_TO>DataSource",
+				"property": "__id"
+			}
+		},
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 32
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"UserGroup": {
+		"Role": {
+			"title": "用户组拥有角色",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		},
+		"User": {
+			"title": "用户组拥有用户",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		},
+		"UserGroup": {
+			"title": "用户组拥有下级",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		}
+	},
+	"User": {
+		"Role": {
+			"title": "用户拥有角色",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		}
+	},
+	"Repository": {
+		"Branch": {
+			"title": "拥有",
+			"isLeftMaster": true,
+			"isRightMaster": false,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		}
+	},
+	"Branch": {
+		"Version": {
+			"title": "拥有",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		}
+	},
+	"Version": {
+		"VersionObject": {
+			"title": "拥有",
+			"isLeftMaster": true,
+			"isRightMaster": true,
+			"display": [
+				"__id"
+			],
+			"prop": {}
+		}
+	}
+}

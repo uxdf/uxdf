@@ -1,0 +1,37 @@
+{
+	"title": "实体定义",
+	"display": [
+		"title"
+	],
+	"namespace": [
+		"ns_system"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"buildProcess": "实体定义微流程",
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true
+		},
+		"title": {
+			"title": "标题",
+			"base": "String",
+			"required": true
+		},
+		"propList": {
+			"title": "属性列表",
+			"base": "String",
+			"required": false,
+			"upperLimit": 500
+		},
+		"configDesc": {
+			"title": "配置描述",
+			"base": "String",
+			"upperLimit": 5000,
+			"required": true
+		}
+	}
+}

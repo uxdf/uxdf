@@ -1,0 +1,34 @@
+{
+	"title": "维表",
+	"extend": [],
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_signifier",
+		"ns_user"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"prop": {
+		"name": {
+			"title": "名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 80
+		},
+		"desc": {
+			"title": "描述",
+			"base": "String",
+			"required": true,
+			"upperLimit": 255
+		},
+		"startSignifier": {
+			"title": "起始类编码",
+			"base": "String",
+			"required": false,
+			"readOnly": true
+		}
+	}
+}

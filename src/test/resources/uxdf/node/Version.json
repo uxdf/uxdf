@@ -1,0 +1,26 @@
+{
+	"title": "版本",
+	"display": [
+		"hash"
+	],
+	"namespace": [
+		"ns_gragit"
+	],
+	"uniqueIndex": [
+		"hash"
+	],
+	"prop": {
+		"hash": {
+			"title": "版本号",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		},
+		"commitUser": {
+			"title": "提交用户",
+			"base": "String",
+			"required": true,
+			"readyOnly": true
+		}
+	}
+}

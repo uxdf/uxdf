@@ -1,0 +1,66 @@
+{
+	"title": "用户",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_system",
+		"ns_user"
+	],
+	"uniqueIndex": [
+		"userName"
+	],
+	"prop": {
+		"name": {
+			"title": "昵称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30,
+			"lowerLimit": 1
+		},
+		"userName": {
+			"title": "登录名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30,
+			"lowerLimit": 1,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z0-9]*$",
+						"message": "仅能输入英文字符、数字"
+					}
+				]
+			]
+		},
+		"password": {
+			"title": "密码",
+			"base": "String",
+			"required": false,
+			"upperLimit": 32,
+			"lowerLimit": 6
+		},
+		"email": {
+			"title": "邮箱",
+			"base": "String",
+			"required": false,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[A-Za-z0-9]+([-_.][A-Za-z0-9]+)*@([A-Za-z0-9]+[-.])+[A-Za-z]{2,5}$",
+						"message": "请输入合法邮箱地址：不能以“- _ .”以及其它特殊字符开头和结束,邮箱域名结尾为2~5个字母"
+					}
+				]
+			]
+		},
+		"photo": {
+			"title": "头像",
+			"base": "Binary",
+			"contentType": "image/*"
+		}
+	}
+}

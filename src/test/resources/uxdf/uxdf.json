@@ -1,0 +1,97 @@
+{
+	"sd": {
+		"node": {
+			"attr": {
+				"__id": {
+					"title": "数据标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 37
+				},
+				"__sd": {
+					"title": "SD名称",
+					"base": "String",
+					"required": true,
+					"upperLimit": 50
+				},
+				"__createTime": {
+					"title": "创建时间",
+					"base": "Datetime",
+					"required": true
+				},
+				"__updateTime": {
+					"title": "更新时间",
+					"base": "Datetime",
+					"required": false
+				},
+				"__uuid": {
+					"title": "唯一标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 32
+				}
+			}
+		},
+		"event": {
+			"attr": {
+				"__id": {
+					"title": "数据标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 37
+				},
+				"__sd": {
+					"title": "SD名称",
+					"base": "String",
+					"required": true,
+					"upperLimit": 50
+				},
+				"__createTime": {
+					"title": "创建时间",
+					"base": "Datetime",
+					"required": true
+				},
+				"__updateTime": {
+					"title": "更新时间",
+					"base": "Datetime",
+					"required": false
+				},
+				"__left": {
+					"title": "左实体标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 37
+				},
+				"__leftSd": {
+					"title": "左实体类型",
+					"base": "String",
+					"required": true,
+					"upperLimit": 50
+				},
+				"__right": {
+					"title": "右实体标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 37
+				},
+				"__rightSd": {
+					"title": "右实体类型",
+					"base": "String",
+					"required": true,
+					"upperLimit": 50
+				},
+				"__isMember": {
+					"title": "是否成员",
+					"base": "Boolean",
+					"required": false
+				},
+				"__uuid": {
+					"title": "唯一标识",
+					"base": "String",
+					"required": true,
+					"upperLimit": 32
+				}
+			}
+		}
+	}
+}

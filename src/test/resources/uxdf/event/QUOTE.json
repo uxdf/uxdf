@@ -1,0 +1,15 @@
+{
+	"DimensionSignifier": {
+		"Signifier": {
+			"title": "引用",
+			"display": [
+				"__id"
+			],
+			"namespace": [
+				"signifier"
+			],
+			"required": "left",
+			"prop": {}
+		}
+	}
+}

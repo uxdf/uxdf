@@ -1,0 +1,34 @@
+{
+	"title": "维表符号",
+	"display": [],
+	"namespace": [
+		"ns_signifier",
+		"ns_user"
+	],
+	"uniqueIndex": [
+	],
+	"prop": {
+		"dimensionId": {
+			"title": "维表ID",
+			"base": "Integer",
+			"required": true,
+			"readOnly": true,
+			"defaultValue": {
+				"chain": "DimensionSignifier-BELONG_TO>Dimension",
+				"property": "__id"
+			}
+		},
+		"quoteSignifier": {
+			"base": "Integer",
+			"title": "引用符号",
+			"required": true,
+			"readOnly": false
+		},
+		"generalOrder": {
+			"base": "Integer",
+			"title": "类顺序",
+			"required": false,
+			"readOnly": false
+		}
+	}
+}

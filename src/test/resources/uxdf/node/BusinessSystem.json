@@ -1,0 +1,56 @@
+{
+	"title": "业务系统",
+	"display": [
+		"name"
+	],
+	"namespace": [
+		"ns_standard",
+		"ns_metadata",
+		"ns_user"
+	],
+	"repositories": [
+		"metadata_origin",
+		"metadata_dict"
+	],
+	"uniqueIndex": [
+		"name"
+	],
+	"prop": {
+		"name": {
+			"title": "系统名称",
+			"base": "String",
+			"required": true,
+			"upperLimit": 30,
+			"lowerLimit": 1,
+			"validRule": [
+				[
+					{
+						"prop": "value",
+						"type": "regex",
+						"value": "^[a-zA-Z0-9\\u4e00-\\u9fa5]*$",
+						"message": "仅能输入中文字符、英文字符、数字"
+					}
+				]
+			]
+		},
+		"importance": {
+			"title": "重要程度",
+			"base": "String",
+			"required": true,
+			"valueSource": [
+				{
+					"key": "high",
+					"value": "A类系统"
+				},
+				{
+					"key": "medium",
+					"value": "B类系统"
+				},
+				{
+					"key": "low",
+					"value": "C类系统"
+				}
+			]
+		}
+	}
+}

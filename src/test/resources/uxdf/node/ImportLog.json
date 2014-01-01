@@ -1,0 +1,54 @@
+{
+	"title": "导入日志",
+	"display": [],
+	"namespace": [
+		"ns_system"
+	],
+	"uniqueIndex": [],
+	"prop": {
+		"beginTime": {
+			"title": "开始时间",
+			"base": "Datetime",
+			"required": true,
+			"readOnly": true
+		},
+		"endTime": {
+			"title": "结束时间",
+			"base": "Datetime",
+			"required": false,
+			"readOnly": true
+		},
+		"file": {
+			"title": "导入文件",
+			"base": "Binary",
+			"required": false,
+			"readOnly": true
+		},
+		"status": {
+			"title": "导入状态",
+			"base": "String",
+			"required": true,
+			"readOnly": true,
+			"valueSource": [
+				{
+					"key": "success",
+					"value": "成功"
+				},
+				{
+					"key": "fail",
+					"value": "失败"
+				},
+				{
+					"key": "importing",
+					"value": "导入中"
+				}
+			]
+		},
+		"log": {
+			"title": "导入日志",
+			"base": "String",
+			"required": false,
+			"upperLimit": 10000
+		}
+	}
+}
